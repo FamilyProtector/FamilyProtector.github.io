@@ -1,0 +1,79 @@
+I"/<ul id="markdown-toc">
+  <li><a href="#搭建过程windows" id="markdown-toc-搭建过程windows">搭建过程(Windows)</a>    <ul>
+      <li><a href="#安装ruby" id="markdown-toc-安装ruby">安装Ruby</a></li>
+      <li><a href="#安装rubygems" id="markdown-toc-安装rubygems">安装RubyGems</a></li>
+      <li><a href="#用rubygems安装jekyll" id="markdown-toc-用rubygems安装jekyll">用RubyGems安装Jekyll</a></li>
+      <li><a href="#创建博客" id="markdown-toc-创建博客">创建博客</a></li>
+    </ul>
+  </li>
+  <li><a href="#ref" id="markdown-toc-ref">Ref</a></li>
+</ul>
+
+<p>搭建自己的博客！</p>
+
+<h2 id="搭建过程windows">搭建过程(Windows)</h2>
+
+<p>主要环节有：安装Ruby，安装RubyGems，安装jekyll，安装代码高亮插件，安装node.js</p>
+
+<h3 id="安装ruby">安装Ruby</h3>
+
+<p>ruby官网下载安装：<a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></p>
+
+<p>安装时默认配置环境变量；安装时自动安装msys2,速度慢,但是得等,要不后面装Jekyll时麻烦。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	ruby -v 
+	ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x64-mingw32]
+</code></pre></div></div>
+
+<h3 id="安装rubygems">安装RubyGems</h3>
+
+<p>官网下载 <a href="http://rubygems.org/pages/download">http://rubygems.org/pages/download</a> zip包</p>
+
+<p>cd到RubyGems目录</p>
+
+<p>执行安装</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	ruby setup.rb
+</code></pre></div></div>
+
+<h3 id="用rubygems安装jekyll">用RubyGems安装Jekyll</h3>
+
+<p>执行下面的语句安装</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	gem install jekyll
+</code></pre></div></div>
+
+<p>异常</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvalid gem: package is corrupt, exception while verifying: undefined method`path2class' for #&lt;Psych::ClassLoader:0x0000010c9d0be0&gt; (NoMethodEr
+</code></pre></div></div>
+<p>解决<a href="https://stackoverflow.com/questions/20850737/install-rails-error-invalid-gem-package-is-corrupt">Stackover</a>:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Stephens-MacBook-Pro-2:~ Steve$ mv .rvm old.rvm
+
+找到那个文件，重新命名，继续重新安装JEKYLL，会自动下载。
+</code></pre></div></div>
+
+<p>至此jekyll就已经安装完毕了，后续就是个性化的自己设定了。</p>
+
+<h3 id="创建博客">创建博客</h3>
+
+<p>在E盘新建一个工作区jekyllWorkspace</p>
+
+<p>cd到jekyllWorkspace</p>
+
+<p>执行jekyll new name创建新的工作区</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E:\&gt;  md jekyllworkspace
+E:\&gt;  cd jekyllworkspace
+E:\jekyllworkspace  jekyll new Family
+E:\jekyllworkspace cd  Family
+E:\jekyllworkspace\Family  jekyll  serve --watch
+
+</code></pre></div></div>
+
+<p>浏览器打开：http://127.0.0.1:4000/</p>
+
+<h2 id="ref">Ref</h2>
+<p>[1] <a href="https://643435675.github.io/2015/02/15/create-my-blog-with-jekyll/">徐代龙的技术专栏</a></p>
+
+<p>[2]<a href="https://blog.csdn.net/xudailong_blog/article/details/78762262">Github搭建个人博客</a></p>
+
+<p>[3] <a href="http://jekyllrb.com/">Jekyll</a></p>
+:ET

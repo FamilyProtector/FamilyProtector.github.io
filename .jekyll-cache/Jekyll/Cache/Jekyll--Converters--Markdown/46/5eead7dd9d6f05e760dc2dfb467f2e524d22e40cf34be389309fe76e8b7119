@@ -1,0 +1,89 @@
+I",<ul id="markdown-toc">
+  <li><a href="#搭建过程windows" id="markdown-toc-搭建过程windows">搭建过程(Windows)</a>    <ul>
+      <li><a href="#安装ruby" id="markdown-toc-安装ruby">安装Ruby</a></li>
+      <li><a href="#安装rubygems" id="markdown-toc-安装rubygems">安装RubyGems</a></li>
+      <li><a href="#用rubygems安装jekyll" id="markdown-toc-用rubygems安装jekyll">用RubyGems安装Jekyll</a></li>
+      <li><a href="#创建博客" id="markdown-toc-创建博客">创建博客</a></li>
+    </ul>
+  </li>
+  <li><a href="#ref" id="markdown-toc-ref">Ref</a></li>
+</ul>
+
+<p>搭建自己的博客！</p>
+
+<h2 id="搭建过程windows">搭建过程(Windows)</h2>
+
+<p>主要环节有：安装Ruby，安装RubyGems，安装jekyll，安装代码高亮插件，安装node.js</p>
+
+<h3 id="安装ruby">安装Ruby</h3>
+
+<p>ruby官网下载安装：<a href="https://www.ruby-lang.org/en/downloads/">https://www.ruby-lang.org/en/downloads/</a></p>
+
+<p>安装时默认配置环境变量；安装时自动安装msys2,速度慢,但是得等,要不后面装Jekyll时麻烦。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	ruby -v 
+	ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x64-mingw32]
+</code></pre></div></div>
+
+<h3 id="安装rubygems">安装RubyGems</h3>
+
+<p>官网下载 <a href="http://rubygems.org/pages/download">http://rubygems.org/pages/download</a> zip包</p>
+
+<p>cd到RubyGems目录</p>
+
+<p>执行安装</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	ruby setup.rb
+</code></pre></div></div>
+
+<h3 id="用rubygems安装jekyll">用RubyGems安装Jekyll</h3>
+
+<p>执行下面的语句安装</p>
+
+<p><img src="http://ww4.sinaimg.cn/large/7011d6cfjw1f2ue2g2p3uj207x00ft8j.jpg" alt="" /></p>
+
+<p>安装结束画面</p>
+
+<p><img src="http://ww4.sinaimg.cn/large/7011d6cfjw1f2ue32drwhj20hv09xq5m.jpg" alt="" /></p>
+
+<p>至此jekyll就已经安装完毕了，后续就是个性化的自己设定了。</p>
+
+<h3 id="创建博客">创建博客</h3>
+
+<p>在d盘新建一个工作区jekyllWorkspace</p>
+
+<p>cd到jekyllWorkspace</p>
+
+<p>执行jekyll new name创建新的工作区</p>
+
+<p><img src="http://ww3.sinaimg.cn/large/7011d6cfjw1f2ue3lt31nj20cj02nt8u.jpg" alt="" /></p>
+
+<p>文件结构如下：</p>
+
+<p><img src="http://ww1.sinaimg.cn/large/7011d6cfjw1f2ue3ujsybj20ek06wabh.jpg" alt="" /></p>
+
+<p>cd到博客文件夹，开启服务器</p>
+
+<p><img src="http://ww1.sinaimg.cn/large/7011d6cfjw1f2ue47y9lgj20ao00f0sl.jpg" alt="" /></p>
+
+<p>watch为了检测文件夹内的变化，即修改后不需要重新启动jekyll</p>
+
+<p>我的环境下启动报错(你的可能没有)，再安装yajl-ruby和rouge</p>
+
+<p><img src="http://ww4.sinaimg.cn/large/7011d6cfjw1f2ue4nelnxj20dd077q49.jpg" alt="" /></p>
+
+<p>再次启动服务器成功</p>
+
+<p><img src="http://ww4.sinaimg.cn/large/7011d6cfjw1f2ue4v42koj20g505bdgy.jpg" alt="" /></p>
+
+<p>访问 http://localhost:4000/</p>
+
+<p><img src="http://ww1.sinaimg.cn/large/7011d6cfjw1f2ue56ckwoj20je0eumz3.jpg" alt="" /></p>
+
+<p>详细文章页面</p>
+
+<p><img src="http://ww2.sinaimg.cn/large/7011d6cfjw1f2ue5f3j9cj20je0gyq7a.jpg" alt="" /></p>
+
+<h2 id="ref">Ref</h2>
+<p>[1] <a href="https://643435675.github.io/2015/02/15/create-my-blog-with-jekyll/">徐代龙的技术专栏</a> 
+[1] <a href="http://jekyllrb.com/">Jekyll</a></p>
+:ET
