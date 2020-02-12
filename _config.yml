@@ -7,7 +7,7 @@
 
 # Site settings
 title: FamilyProtector
-brief-intro: Python Coder
+brief-intro: Anyone doing...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://familyprotector.github.io/" # the base hostname & protocol for your site
 
